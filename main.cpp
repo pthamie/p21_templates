@@ -9,6 +9,7 @@ int main (int argc, char**argv)
     mf.SetValue (1, 1, 3.2);
     float f = mf.GetValue(1, 1);
     std::cout << f << std::endl;
+    mf.WriteToFile("mf.txt");
 
     matrix<int> mi;
 
@@ -16,6 +17,7 @@ int main (int argc, char**argv)
     mi.SetValue (1, 1, 3.2);
     int n = mi.GetValue(1, 1);
     std::cout << n << std::endl;
+    mi.WriteToFile("mi.txt");
 
     return 0;
 }
