@@ -19,5 +19,13 @@ int main (int argc, char**argv)
     std::cout << n << std::endl;
     mi.WriteToFile("mi.txt");
 
+    matrix<std::string> mc("");
+    mc.SetSize (10, 10);
+    mc.SetValue (1, 1, "Bonjour");
+    std::string s = mc.GetValue(1, 1);
+    std::cout << s << std::endl;
+    mc.WriteToFile("mc.txt");
+
+
     return 0;
 }
