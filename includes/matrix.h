@@ -39,6 +39,16 @@ public:
         _data[li * _nbcol + col] = val;
     }
 
+    void Mult(const unsigned int li, const unsigned int col, const T val)
+    {
+        _data[li * _nbcol + col] *= val;
+    }
+
+    void Add(const unsigned int li, const unsigned int col, const T val)
+    {
+        _data[li * _nbcol + col] += val;
+    }
+
     T GetValue(const unsigned int li, const unsigned int col) const
     {
         T ret;

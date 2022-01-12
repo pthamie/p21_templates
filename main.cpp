@@ -15,6 +15,8 @@ int main (int argc, char**argv)
 
     mi.SetSize (10, 10);
     mi.SetValue (1, 1, 3.2);
+    mi.Add (1, 1, 3);
+    mi.Mult (1, 1, 3);
     int n = mi.GetValue(1, 1);
     std::cout << n << std::endl;
     mi.WriteToFile("mi.txt");
@@ -22,6 +24,8 @@ int main (int argc, char**argv)
     matrix<std::string> mc("");
     mc.SetSize (10, 10);
     mc.SetValue (1, 1, "Bonjour");
+    mc.Add (1,1, " toto");
+    //mc.Mult (1,1, " titi");
     std::string s = mc.GetValue(1, 1);
     std::cout << s << std::endl;
     mc.WriteToFile("mc.txt");
